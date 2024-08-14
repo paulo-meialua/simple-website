@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://getwallpapers.com/wallpaper/full/b/a/3/1114531-soft-backgrounds-1920x1080-for-mobile-hd.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #d9d9d9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-container p {
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-container input[type="number"],
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Private Page 🕵️</h1>
+        <p>Welcome to this private page. You can only see it if you are logged in!</p>
+
+        <h2>Enter information below:</h2>
+        <form action="/model_inference" method="post">
+            <input type="number" name="number1" placeholder="Enter first number" required>
+            <input type="number" name="number2" placeholder="Enter second number" required>
+            <input type="number" name="number3" placeholder="Enter third number" required>
+            <button type="submit">Send</button>            
+        </form>
+
+        {% include 'map.html' %}
+    </div>
+</body>
+
+</html>
